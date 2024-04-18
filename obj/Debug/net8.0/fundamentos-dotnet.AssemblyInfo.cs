@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fundamentos-dotnet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50004f9c432982e2de81186da9aa027d87f31347")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8178c3428d401ba7604e56424599bc69f1c9e1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("fundamentos-dotnet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fundamentos-dotnet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
