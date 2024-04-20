@@ -6,6 +6,3 @@ p.Nome = "Leticia";
 p.Idade = 19;
 p.Apresentar();
 
-
-
-
