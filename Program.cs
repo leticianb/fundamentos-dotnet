@@ -1,17 +1,67 @@
 ﻿using fundamentos_dotnet.Models;
 
-int quantidadeEmEstoque = 10;
-int quantidadeCompra = 4;
-Console.WriteLine($"Quantidade em esqtoque: {quantidadeEmEstoque}");
+Calculadora calc = new Calculadora();
+calc.Somar(3,6);
+calc.Subtrair(3,6);
+calc.Multiplicar(3,6);
+calc.Dividir(3,6);
+calc.Potencia(2,3);
+calc.Raiz(3);
+string numero = Console.ReadLine();
+int number = int.Parse(numero);
+for (int contador = 1; contador<=10; contador++){
+    int result = number*contador;
+    Console.WriteLine(result);
 
-if(quantidadeEmEstoque>= quantidadeCompra){
-    Console.WriteLine("Venda realizada");
-    quantidadeEmEstoque--;
-    Console.WriteLine(quantidadeEmEstoque);
 }
-else{
-    Console.WriteLine("Não foi possível efetuar a compra");
+int cont =1;
+while(cont<=10){
+    int result = number*cont;
+    Console.WriteLine(result);
+    cont++;
 }
+int soma = 0, num = 0;
+
+do {
+    Console.WriteLine("digite um numero");
+    num = Convert.ToInt32(Console.ReadLine());
+    soma +=num;
+
+
+}while(num!=0);
+Console.WriteLine(soma);
+
+// Console.WriteLine("Digite uma letra");
+// string letra = Console.ReadLine();
+// switch(letra){
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//         Console.WriteLine("vogal");
+//         break;
+//     default:
+//         Console.WriteLine("Não vogal");
+//         break;
+
+// }
+// int quantidadeEmEstoque = 10;
+// int quantidadeCompra = 4;
+// Console.WriteLine($"Quantidade em esqtoque: {quantidadeEmEstoque}");
+
+// if(quantidadeCompra ==0){
+//     Console.WriteLine("Compra inválida");
+// }
+
+// else if(quantidadeEmEstoque>= quantidadeCompra){
+//     Console.WriteLine("Venda realizada");
+//     quantidadeEmEstoque--;
+//     Console.WriteLine(quantidadeEmEstoque);
+// }
+// else{
+//     Console.WriteLine("Não foi possível efetuar a compra");
+// }
 
 
 // DateTime dataAtual = DateTime.Now.AddDays(5);
