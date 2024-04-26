@@ -1,35 +1,49 @@
 ﻿using fundamentos_dotnet.Models;
 
-Calculadora calc = new Calculadora();
-calc.Somar(3,6);
-calc.Subtrair(3,6);
-calc.Multiplicar(3,6);
-calc.Dividir(3,6);
-calc.Potencia(2,3);
-calc.Raiz(3);
-string numero = Console.ReadLine();
-int number = int.Parse(numero);
-for (int contador = 1; contador<=10; contador++){
-    int result = number*contador;
-    Console.WriteLine(result);
+int[] arraysInteiros = new int[3];
+arraysInteiros[0]= 72;
+arraysInteiros[1]= 73;
+arraysInteiros[2]= 74;
 
+
+for(int contador=0; contador<arraysInteiros.Lenght; contador++){
+    Console.WriteLine(arraysInteiros[contador]);
+    
 }
-int cont =1;
-while(cont<=10){
-    int result = number*cont;
-    Console.WriteLine(result);
-    cont++;
-}
-int soma = 0, num = 0;
-
-do {
-    Console.WriteLine("digite um numero");
-    num = Convert.ToInt32(Console.ReadLine());
-    soma +=num;
 
 
-}while(num!=0);
-Console.WriteLine(soma);
+
+
+// Calculadora calc = new Calculadora();
+// calc.Somar(3,6);
+// calc.Subtrair(3,6);
+// calc.Multiplicar(3,6);
+// calc.Dividir(3,6);
+// calc.Potencia(2,3);
+// calc.Raiz(3);
+// string numero = Console.ReadLine();
+// int number = int.Parse(numero);
+// for (int contador = 1; contador<=10; contador++){
+//     int result = number*contador;
+//     Console.WriteLine(result);
+
+// }
+// int cont =1;
+// while(cont<=10){
+//     int result = number*cont;
+//     Console.WriteLine(result);
+//     cont++;
+// }
+// int soma = 0, num = 0;
+
+// do {
+//     Console.WriteLine("digite um numero");
+//     num = Convert.ToInt32(Console.ReadLine());
+//     soma +=num;
+
+
+// }while(num!=0);
+// Console.WriteLine(soma);
 
 // Console.WriteLine("Digite uma letra");
 // string letra = Console.ReadLine();
