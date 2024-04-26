@@ -1,23 +1,38 @@
 ﻿using fundamentos_dotnet.Models;
+List<string> listaString = new List<string>(); //sintaxe lista
 
-int[] arraysInteiros = new int[3];
-arraysInteiros[0]= 72;
-arraysInteiros[1]= 73;
-arraysInteiros[2]= 74;
+listaString.Add("SP");
+listaString.Add("MG");
+listaString.Add("RJ");
+listaString.Add("PR");
 
-int[] arrayDobrado = new int[arraysInteiros.Length*2];
-Array.Copy(arraysInteiros, arrayDobrado, arraysInteiros.Length);
-
-//Array.Resize(ref arraysInteiros, arraysInteiros.Length *2);
-
-for(int conta=0; conta<arraysInteiros.Length; conta++){
-    Console.WriteLine(arraysInteiros[conta]);
+for(int contador = 0; contador<listaString.Count; contador++){
+    Console.WriteLine(listaString[contador]);
+}
+foreach(string item in listaString){
+    Console.WriteLine(item);
     
 }
 
-foreach (int valor in arraysInteiros){
-    Console.WriteLine(valor);
-}
+
+// int[] arraysInteiros = new int[3];
+// arraysInteiros[0]= 72;
+// arraysInteiros[1]= 73;
+// arraysInteiros[2]= 74;
+
+// int[] arrayDobrado = new int[arraysInteiros.Length*2];
+// Array.Copy(arraysInteiros, arrayDobrado, arraysInteiros.Length);
+
+// //Array.Resize(ref arraysInteiros, arraysInteiros.Length *2);
+
+// for(int conta=0; conta<arraysInteiros.Length; conta++){
+//     Console.WriteLine(arraysInteiros[conta]);
+    
+// }
+
+// foreach (int valor in arraysInteiros){
+//     Console.WriteLine(valor);
+// }
 
 
 
