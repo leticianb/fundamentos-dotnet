@@ -5,7 +5,10 @@ arraysInteiros[0]= 72;
 arraysInteiros[1]= 73;
 arraysInteiros[2]= 74;
 
-Array.Resize(ref arraysInteiros, arraysInteiros.Length *2);
+int[] arrayDobrado = new int[arraysInteiros.Length*2];
+Array.Copy(arraysInteiros, arrayDobrado, arraysInteiros.Length);
+
+//Array.Resize(ref arraysInteiros, arraysInteiros.Length *2);
 
 for(int conta=0; conta<arraysInteiros.Length; conta++){
     Console.WriteLine(arraysInteiros[conta]);
