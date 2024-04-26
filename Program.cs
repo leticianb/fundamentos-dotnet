@@ -5,12 +5,16 @@ arraysInteiros[0]= 72;
 arraysInteiros[1]= 73;
 arraysInteiros[2]= 74;
 
+Array.Resize(ref arraysInteiros, arraysInteiros.Length *2);
 
-for(int contador=0; contador<arraysInteiros.Lenght; contador++){
-    Console.WriteLine(arraysInteiros[contador]);
+for(int conta=0; conta<arraysInteiros.Length; conta++){
+    Console.WriteLine(arraysInteiros[conta]);
     
 }
 
+foreach (int valor in arraysInteiros){
+    Console.WriteLine(valor);
+}
 
 
 
